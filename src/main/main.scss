@@ -1,0 +1,56 @@
+.main {
+    position: relative;
+}
+.main:hover .video {
+    display: block;
+}
+.video {
+    display: none;
+    top: 4em;
+    position: fixed;
+    z-index: 10;
+    right: .5em;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+.fetching {
+    margin-top: 20em;
+    width: 8em;
+    height: 8em;
+    border-radius: 100%;
+    border: 4px dashed rgb(75, 143, 165);
+    animation-name: search-fetching;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+@keyframes search-fetching {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
+.pages {
+    margin: 1.2em 0;
+    .page, .current-page {
+        border: 1px solid lightgrey;
+        border-radius: 100%;
+        padding: .3em .6em;
+        margin: 0 .6em;
+        cursor: pointer;
+    }
+    .current-page {
+        border: 3px solid rgb(22, 22, 22);
+        font-weight: 700;
+    }
+}
+

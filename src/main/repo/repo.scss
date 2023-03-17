@@ -1,0 +1,36 @@
+.repo {
+    cursor: pointer;
+}
+
+.repo-header {
+    border: 1px dashed rgba(0,0,0,0.8);
+    padding: 1.5em 1em;
+    margin: 0.5em;
+    border-radius: 20px;
+    &__title {
+        text-align: start;
+    }
+    &__photo{
+        align-self: start;
+        float: right;
+    }
+    &__photo > img{
+        height: 140px;
+    }
+    &__course-name {
+        text-align: center;
+    }
+    &__lessons-count {
+        text-align: center;
+    }
+    &__rating {
+        font-size: 1.1em;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: bold;
+    }
+}
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
